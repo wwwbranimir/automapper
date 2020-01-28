@@ -1,15 +1,11 @@
-using System;
-using System.Linq;
-using System.Reflection;
 using AutoMapper;
 using AutoMapperTest.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
-using AutoMapperTest.Repositories;
+
 namespace AutoMapperTest
 {
     public class Startup
