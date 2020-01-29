@@ -10,7 +10,8 @@ using AutoMapperTest.Test.Helper;
 using Moq;
 namespace AutoMapperTest.Test
 {
-    internal class AutoMapperShould
+    
+    public class AutoMapperShould
     {
         //[Fact]
         //public async Task ConcatenateNameAndSurNameFromUrlItemToUrlItemDto()
@@ -23,5 +24,6 @@ namespace AutoMapperTest.Test
         //    //    var test = mapper.Map<UrlItem, UrlItemDto>(UrlItem.Default);
         //    //});
         //}
+        //
     }
 }
