@@ -13,17 +13,18 @@ namespace AutoMapperTest.Test
     
     public class AutoMapperShould
     {
-        //[Fact]
-        //public async Task ConcatenateNameAndSurNameFromUrlItemToUrlItemDto()
-        //{
-        //    //await Task.Run(() =>
-        //    //{
-        //    //    var mapper = DependencyResolverHelper.Resolve<IMapper>();
+        [Fact]
+        public void ConcatenateNameAndSurNameFromUrlItemToUrlItemDto()
+        {
+            //await Task.Run(() =>
+            //{
+            //    var mapper = DependencyResolverHelper.Resolve<IMapper>();
 
-        //    //    var fakeRepository = new MockRepository();
-        //    //    var test = mapper.Map<UrlItem, UrlItemDto>(UrlItem.Default);
-        //    //});
-        //}
-        //
+            //    var fakeRepository = new MockRepository();
+            //    var test = mapper.Map<UrlItem, UrlItemDto>(UrlItem.Default);
+            //});
+            
+        }
+
     }
 }
