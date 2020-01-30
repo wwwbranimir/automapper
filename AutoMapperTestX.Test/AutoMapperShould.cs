@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System;
 using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapperTest.Destination;
 using AutoMapperTest.Source;
+using AutoMapperTestX.Test.Helper;
 using Xunit;
-using AutoMapperTest.Test.Helper;
-using Moq;
-using Xunit.Sdk;
 
-namespace AutoMapperTest.Test
+namespace AutoMapperTestX.Test
 {
     public class AutoMapperShould
     {
@@ -27,13 +23,9 @@ namespace AutoMapperTest.Test
 
         }
         [Fact]
-        public async Task Test1()
+        public void Test1()
         {
-        }
-        [Fact]
-        public async Task Test2()
-        {
-        }
 
+        }
     }
 }

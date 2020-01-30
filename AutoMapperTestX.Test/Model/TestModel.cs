@@ -1,4 +1,8 @@
-﻿namespace AutoMapperTest.Test.Model
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace AutoMapperTestX.Test.Model
 {
     internal class TestModel
     {
