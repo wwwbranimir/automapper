@@ -9,7 +9,7 @@ namespace AutoMapperTest.Profiles
         public UrlItemProfile()
         {
             CreateMap<UrlItem, UrlItemDto>().ForMember(dest => dest.FullName,
-                opt => opt.MapFrom(src => $"{src.Name} {src.SurName}"));
+                opt => opt.MapFrom(src => $"{src.Name} {src.SurName} Car"));
         }
     }
 }

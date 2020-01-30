@@ -4,6 +4,8 @@ using AutoMapper;
 using AutoMapperTest.Destination;
 using AutoMapperTest.Source;
 using AutoMapperTestX.Test.Helper;
+using AutoMapperTestX.Test.Model;
+using FluentAssertions;
 using Xunit;
 
 namespace AutoMapperTestX.Test
@@ -15,10 +17,15 @@ namespace AutoMapperTestX.Test
         {
             await Task.Run(() =>
             {
+                DependencyResolverHelper.DependencyResolverHelperX();
                 var mapper = DependencyResolverHelper.Resolve<IMapper>();
 
                 //var fakeRepository = new MockRepository();
-                var test = mapper.Map<UrlItem, UrlItemDto>(UrlItem.Default);
+                var actual = mapper.Map<UrlItem, UrlItemDto>(UrlItem.Default);
+                var expected = TestModel.GetExpected();
+                actual.Should().BeEquivalentTo(expected);
+                //string actual = "ABCDEFGHI";
+                //actual.Should().StartWith("AB").And.EndWith("HI").And.Contain("EF").And.HaveLength(9);
             });
 
         }

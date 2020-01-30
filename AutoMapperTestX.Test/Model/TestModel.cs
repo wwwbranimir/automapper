@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using AutoMapperTest.Destination;
 
 namespace AutoMapperTestX.Test.Model
 {
@@ -13,5 +14,15 @@ namespace AutoMapperTestX.Test.Model
 
         public string Name { get; }
         public string SurName { get; }
+
+        public static UrlItemDto GetExpected()
+        {
+            return new UrlItemDto()
+            {
+                Id = 1,
+                FullName = "Mirko Mirkovic Car"
+            };
+        }
     }
+
 }

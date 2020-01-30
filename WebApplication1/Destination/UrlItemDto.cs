@@ -2,9 +2,9 @@
 {
     public class UrlItemDto
     {
-        public  int Id { get; internal set; }
+        public  int Id { get; set; }
 
-        public string FullName { get; internal set; }
+        public string FullName { get; set; }
 
     }
 }
