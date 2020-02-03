@@ -7,6 +7,7 @@ using AutoMapperTest.Destination;
 using AutoMapperTest.Source;
 using Xunit;
 using AutoMapperTest.Test.Helper;
+using FluentAssertions;
 using Moq;
 using Xunit.Sdk;
 
@@ -20,19 +21,12 @@ namespace AutoMapperTest.Test
             await Task.Run(() =>
             {
                 var mapper = DependencyResolverHelper.Resolve<IMapper>();
-                var test = mapper.Map<UrlItem, UrlItemDto>(UrlItem.Default);
-
+                
+                var actual = UrlItem.Default;
+                var mapped = mapper.Map<UrlItem, UrlItemDto>(UrlItem.Default) ;
+                var expected = $"{actual.Name} {actual.SurName} Car";
+                mapped.FullName.Should().BeEquivalentTo(expected);
             });
-
         }
-        [Fact]
-        public async Task Test1()
-        {
-        }
-        [Fact]
-        public async Task Test2()
-        {
-        }
-
     }
 }
