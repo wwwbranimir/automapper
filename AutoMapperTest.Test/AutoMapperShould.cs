@@ -20,9 +20,8 @@ namespace AutoMapperTest.Test
             await Task.Run(() =>
             {
                 var mapper = DependencyResolverHelper.Resolve<IMapper>();
-
-                //var fakeRepository = new MockRepository();
                 var test = mapper.Map<UrlItem, UrlItemDto>(UrlItem.Default);
+
             });
 
         }
